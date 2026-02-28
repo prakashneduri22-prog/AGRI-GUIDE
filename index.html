@@ -3,6 +3,10 @@
 
 <head>
     <link rel="stylesheet" href="ESE.css">
+    <style>
+        /* All pages hidden by default — JS calls showPage() to reveal the correct one */
+        .page.hidden { display: none !important; }
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -20,7 +24,7 @@
 <body class="bg-green-100 p-4">
     <div>
         <!-- SIGN IN PAGE -->
-        <div id="signin-page" class="page min-h-screen flex items-center justify-center">
+        <div id="signin-page" class="page hidden min-h-screen flex items-center justify-center">
             <div class="w-full max-w-md">
                 <!-- Logo / Branding -->
                 <div class="text-center mb-8">
