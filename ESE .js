@@ -9,6 +9,11 @@ function showPage(id) {
     document.getElementById(id).classList.remove('hidden');
 }
 
+// ✅ On page load — hide everything, show only sign-in
+document.addEventListener('DOMContentLoaded', function () {
+    showPage('signin-page');
+});
+
 function showSignIn() { showPage('signin-page'); }
 function showSignUp()  { showPage('signup-page'); }
 
